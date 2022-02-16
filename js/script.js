@@ -27,3 +27,35 @@ list.addEventListener("click", (e) => {
 });
 
 list.addEventListener("dblclick", (e) => e.target.remove());
+
+
+// CORRECTION FLAVIEN
+// const input = document.querySelector("#input");
+// const list = document.querySelector("ul#list");
+
+// const TODO_NAME = "todolist";
+
+// if (localStorage.getItem(TODO_NAME)) {
+//     list.innerHTML = localStorage.getItem(TODO_NAME);
+// }
+
+// function save() {
+//     window.localStorage.setItem(TODO_NAME, list.innerHTML);
+// };
+
+// input.addEventListener("keydown", (e) => {
+//     if (e.key === "Enter") {
+//         const newLi = document.createElement("li");
+//         newLi.innerText = input.value;
+//         list.appendChild(newLi);
+//         input.value = "";
+//         save();
+//     }
+// });
+
+// list.addEventListener("click", (e) => {
+//     e.target.classList.toggle("done");
+//     save();
+// });
+
+// list.addEventListener("dblclick", (e) => e.target.remove());
