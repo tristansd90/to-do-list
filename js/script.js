@@ -2,6 +2,10 @@ const list = document.querySelector("#list");
 const input = document.querySelector("#input");
 const li = document.querySelector("li");
 
+function storage() {
+    window.localStorage.todolist = list.innerHTML;
+};
+
 input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         const newLi = document.createElement("li");
@@ -23,7 +27,3 @@ list.addEventListener("click", (e) => {
 });
 
 list.addEventListener("dblclick", (e) => e.target.remove());
-
-function storage() {
-    window.localStorage.todolist = list.innerHTML;
-};
